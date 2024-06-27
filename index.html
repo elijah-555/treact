@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="row">
-        <nav>
-            <figure>
-                <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
-            </figure>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign up</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="row">
-        <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
-        <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-        <div class="text__box">
-            <input type="email" placeholder="Your E-mail Address">
-            <button>Get started</button>
+    <div class="container">
+        <div class="row">
+            <nav>
+                <figure class="nav__img--wrapper">
+                    <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__img">
+                    <h1>
+                        Treact
+                    </h1>
+                </figure>
+                <ul class="nav__links--list">
+                    <li class="nav__link"><a class="nav__link--anchor" href="">About</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor" href="">Blog</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor" href="">Pricing</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor" href="">Contact Us</a></li>
+                    <li class="nav__link--grouped"><a class="nav__link--grouped-anchor" href="">Login</a></li>
+                    <li class="nav__link--primary"><a class="nav__link--primary-anchor" href="">Sign up</a></li>
+                </ul>
+            </nav>
         </div>
+        <section id="landing">
+            <div class="row row__landing">
+                <div class="row__landing--left">
+                    <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
+                    <p class="landing__para">Our templates are easy to setup, understand and customize. Fully modular
+                        components
+                        with a variety of
+                        pages
+                        and components.</p>
+                    <input class="landing__inp" type="email" placeholder="Your E-mail Address">
+                    <button class="landing__btn">Get started</button>
+                    <p class="landing__para--logo"><span class="grey">
+                            OUR TRUSTED CUSTOMERS</p>
+                    </span>
+                    <figure class="logo__wrapper">
+                        <img class="logo" src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
+                    </figure>
+                </div>
+                <div class="row__landing--right">
+                    <figure>
+                        <img class="landing__img"
+                            src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
+                    </figure>
+                </div>
+            </div>
     </div>
-    <p>OUR TRUSTED CUSTOMERS</p>
+    </section>
 </body>
+
 </html>
