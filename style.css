@@ -370,6 +370,7 @@ nav {
 
 .row__pricing {
   text-align: center;
+  padding: 96px 0;
 }
 
 .pricing__header {
@@ -428,18 +429,31 @@ nav {
   color: #a0aec0;
 }
 
-/* FOOTER */
+.feature__para {
+  margin-top: 20px;
+}
 
+.action__btn {
+  padding: 16px 32px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 14px;
+  border: transparent;
+  width: 100%;
+}
+
+/* FOOTER */
 
 .links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .link {
   display: flex;
   flex-direction: column;
-  width: calc(100%/5);
-  align-items: center;
+  width: auto;
 }
 
 .footer__logo--wrapper {
@@ -454,4 +468,24 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__link--header {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer__link--anchor {
+  padding-bottom: 4px;
+  margin: 12px 0 4px 0;
+  font-size: 14px;
+}
+
+.footer__link--list {
+  list-style-type: none;
+}
+
+.footer__divider {
+  margin: 64px 0;
+  border-bottom: 2px solid rgb(116, 44, 255);
 }
