@@ -7,6 +7,7 @@
     <title>Treact project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a588e7e54d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </head>
 
@@ -31,6 +32,28 @@
                         <li class="nav__link--grouped"><a class="nav__link--grouped-anchor" href="">Login</a></li>
                         <li class="nav__link--primary"><a class="nav__link--primary-anchor" href="">Sign up</a></li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#services" class="menu__link" onclick="closeMenu()">Services</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#pricing" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#setup" class="menu__link no-cursor" onclick="closeMenu()">Set Up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="row row__landing">
