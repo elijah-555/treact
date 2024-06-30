@@ -281,7 +281,7 @@ nav {
 
 .about__title {
   margin-bottom: 16px;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 900;
 }
 
@@ -315,6 +315,7 @@ nav {
   padding: 12px 32px;
   border: 0px transparent;
   font-weight: 600;
+  font-size: 14px;
 }
 
 /* SETUP */
@@ -379,6 +380,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.pricing__title {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.pricing__para {
+  margin-top: 16px;
 }
 
 .plans {
@@ -521,10 +531,12 @@ nav {
 }
 
 /* FOOTER */
+.footer__wrapper {
+  background-color: rgb(100 21 255);
+}
 
 .row__footer {
-  padding: 96px 32px;
-  background-color: rgb(100 21 255);
+  padding: 96px 32px 64px;
 }
 
 .links {
@@ -588,4 +600,11 @@ nav {
 
 .grey__cr {
   color: #cbd5e0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px;
+  width: 100%;
 }
