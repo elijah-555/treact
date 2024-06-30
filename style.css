@@ -8,6 +8,10 @@
   line-height: 1.25;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .grey {
   color: #a0aec0;
 }
@@ -60,10 +64,9 @@ nav {
 .nav__link--left {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.nav__link--right {
-}
 
 .nav__img--wrapper {
   max-width: 40px;
@@ -97,6 +100,7 @@ nav {
 .nav__link--grouped-anchor {
   margin-left: 48px;
   margin-right: 24px;
+  cursor: not-allowed;
 }
 
 .nav__link--primary-anchor {
@@ -105,6 +109,7 @@ nav {
   border-radius: 24px;
   padding: 0.75rem 2rem;
   margin: 0 auto;
+  cursor: not-allowed;
 }
 
 /* LANDING */
@@ -318,6 +323,10 @@ nav {
   font-size: 14px;
 }
 
+.about__btn:hover {
+  cursor: pointer;
+}
+
 /* SETUP */
 
 .row__setup {
@@ -495,6 +504,10 @@ nav {
   width: 100%;
 }
 
+.action__btn:hover {
+  cursor: pointer;
+}
+
 .blue-white {
   color: #f7fafc;
 }
@@ -517,7 +530,7 @@ nav {
 }
 
 .btn__blue {
-  color:#6415ff;
+  color: #6415ff;
   background: #f7fafc;
 }
 
@@ -589,6 +602,10 @@ nav {
   font-size: 14px;
 }
 
+.footer__link--anchor:hover {
+  cursor: not-allowed;
+}
+
 .footer__link--list {
   list-style-type: none;
 }
@@ -607,4 +624,255 @@ nav {
   justify-content: space-between;
   max-width: 100px;
   width: 100%;
+}
+
+.footer__links:hover {
+cursor: not-allowed;
+}
+
+/* LAPTOPS */
+
+@media (max-width: 1024px) {
+  .nav__links--list {
+    display: none;
+  }
+
+  .row__landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row__landing--left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing__title {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .landing__para {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .input-box {
+    width: 80%;
+  }
+
+  .landing__para--logo {
+    font-size: 14px;
+  }
+
+  .landing__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  .logo__wrapper {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .row__landing--right {
+    margin-top: 48px;
+  }
+
+  .row__features {
+    padding: 0 12px;
+  }
+
+  .features__para {
+    font-size: 16px;
+  }
+
+  .service {
+    width: 50%;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 45%;
+  }
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 728px) {
+  .row__landing--left {
+    width: 90%;
+  }
+
+  .row__landing--right {
+    width: 80%;
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service {
+    width: 55%;
+  }
+
+  .row__about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .row__about--right {
+    width: 80%;
+    margin-bottom: 64px;
+  }
+
+  .row__about--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+
+  .about__title {
+    width: 100%;
+  }
+
+  .about__para {
+    font-size: 16px;
+  }
+
+  .row__setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row__setup--left {
+    margin-bottom: 48px;
+  }
+
+  .row__setup--right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .steps__list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .list__seperator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step__number {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .step {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step__title {
+    font-size: 20px;
+  }
+
+  .step__description {
+    font-size: 14px;
+    width: 50%;
+  }
+
+  .pricing__title {
+    width: 80%;
+  }
+
+  .pricing__para {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .link {
+    width: 30%;
+    padding-top: 24px;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grey__cr {
+    padding: 24px 0 28px 0;
+  }
+}
+
+/* PHONES */
+
+@media (max-width: 640px) {
+  .row__landing {
+    width: 105%;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .service__description {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about__title {
+    font-size: 30px;
+  }
+
+  .setup__title {
+    font-size: 30px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .link {
+    width: calc(100% / 4);
+  }
 }
