@@ -67,7 +67,6 @@ nav {
   cursor: pointer;
 }
 
-
 .nav__img--wrapper {
   max-width: 40px;
   display: flex;
@@ -627,7 +626,7 @@ nav {
 }
 
 .footer__links:hover {
-cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 /* LAPTOPS */
@@ -706,6 +705,7 @@ cursor: not-allowed;
 
   .plan {
     width: 45%;
+    margin-right: 0;
   }
 }
 
@@ -817,6 +817,10 @@ cursor: not-allowed;
     width: 80%;
   }
 
+  .plan {
+    margin-right: 0;
+  }
+
   .links {
     display: flex;
     flex-wrap: wrap;
@@ -841,8 +845,8 @@ cursor: not-allowed;
 /* PHONES */
 
 @media (max-width: 640px) {
-  .row__landing {
-    width: 105%;
+  .input-box {
+    width: 100%;
   }
 
   .service {
@@ -854,6 +858,10 @@ cursor: not-allowed;
   .service__description {
     text-align: center;
     margin-left: 0;
+  }
+
+  .plans {
+    justify-content: center;
   }
 
   .about__title {
