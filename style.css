@@ -847,7 +847,7 @@ nav {
 @media (max-width: 640px) {
   
   .input-box {
-    width: 120%;
+    width: 130%;
   }
 
   .service {
@@ -866,7 +866,7 @@ nav {
   }
 
   .plan {
-    width: 60%;
+    width: 80%;
   }
   
   .about__title {
