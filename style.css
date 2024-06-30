@@ -845,8 +845,9 @@ nav {
 /* PHONES */
 
 @media (max-width: 640px) {
+  
   .input-box {
-    width: 100%;
+    width: 110%;
   }
 
   .service {
@@ -864,10 +865,14 @@ nav {
     justify-content: center;
   }
 
+  .plan {
+    width: 55%;
+  }
+  
   .about__title {
     font-size: 30px;
   }
-
+  
   .setup__title {
     font-size: 30px;
   }
