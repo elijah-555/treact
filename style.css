@@ -833,6 +833,11 @@ nav {
 
 /* ACTION BOX */
 
+#action {
+  display: flex;
+  justify-content: center;
+}
+
 .row__action {
   margin: 96px 0;
   padding: 64px 24px;
