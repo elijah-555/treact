@@ -26,7 +26,7 @@ a {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 400;
   color: #7c8ba1;
 }
 
@@ -284,6 +284,7 @@ nav {
   letter-spacing: 1.75px;
   margin-bottom: 16px;
   font-weight: 600;
+  color: #6415ff;
 }
 
 .features__title {
@@ -323,7 +324,7 @@ nav {
   color: #7c8ba1;
   margin-top: 16px;
   line-height: 2;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .feature__img--wrapper {
@@ -358,7 +359,7 @@ nav {
 .about__para {
   font-size: 18px;
   line-height: 1.625;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 32px;
 }
 
@@ -378,7 +379,8 @@ nav {
   width: 100%;
 }
 
-.about__btn {
+.about__btn,
+.values__btn {
   background-color: #6415ff;
   color: #f7fafc;
   border-radius: 9999px;
@@ -441,6 +443,80 @@ nav {
 
 .step__description {
   margin-top: 12px;
+}
+
+/* VALUES */
+
+.row__values {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 0;
+}
+
+.row__values--left {
+  width: 45%;
+}
+
+.values__title {
+  font-size: 48px;
+  font-weight: 900;
+  width: 75%;
+}
+
+.values__para {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.values__about--wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.values__about {
+  margin-right: 24px;
+}
+
+.values__about--header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.value__about--title {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.fa-suitcase {
+  padding: 8px;
+  background-color: #feb2b2;
+  border: transparent;
+  border-radius: 9999px;
+}
+
+.fa-dollar-sign {
+  padding: 8px 12px;
+  background-color: rgb(154 230 180);
+  border: transparent;
+  border-radius: 9999px;
+}
+
+.values__about--para {
+  font-weight: 400;
+}
+
+.row__values--right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.values__img {
+  width: 100%;
 }
 
 /* PRICING */
@@ -725,6 +801,7 @@ nav {
     font-size: 16px;
     margin: 20px 0;
     text-align: center;
+    font-weight: 400;
   }
 
   .input-box {
@@ -757,6 +834,7 @@ nav {
 
   .features__para {
     font-size: 16px;
+    font-weight: 400;
   }
 
   .service {
@@ -776,6 +854,28 @@ nav {
 
   .btn__menu {
     display: block;
+  }
+
+  .values__title {
+    font-size: 36px;
+    width: 80%;
+  }
+
+  .values__para {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .values__about--wrapper {
+    flex-direction: column;
+  }
+
+  .values__about--header {
+    margin-top: 24px;
+  }
+
+  .values__about--para {
+    width: 80%;
   }
 }
 
@@ -878,6 +978,53 @@ nav {
     width: 50%;
   }
 
+  .row__values {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row__values--right {
+    width: 80%;
+  }
+
+  .row__values--left {
+    width: 75%;
+  }
+  
+  
+  
+  .values__left--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 98px;
+  }
+
+  .values__title {
+    text-align: center;
+  }
+
+  .values__para {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 75%;
+  }
+
+
+  .values__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .values__about--para {
+    text-align: center;
+    font-size: 16px;
+  }
+
   .pricing__title {
     width: 80%;
   }
@@ -916,7 +1063,7 @@ nav {
 
 @media (max-width: 640px) {
   .input-box {
-    width: 120%;
+    width: 110%;
   }
 
   .service {
