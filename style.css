@@ -1010,7 +1010,7 @@ nav {
   }
 
   .input-box {
-    width: 80%;
+    width: 100%;
   }
 
   .landing__para--logo {
@@ -1118,6 +1118,10 @@ nav {
   }
 
   .row__landing--right {
+    width: 80%;
+  }
+
+  .input-box {
     width: 80%;
   }
 
@@ -1330,7 +1334,21 @@ nav {
 
 @media (max-width: 640px) {
   .input-box {
-    width: 120%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing__inp {
+    text-align: center;
+  }
+
+  .landing__btn {
+    position: relative;
+    width: 100%;
+    padding: 20px 32px;
+    text-align: center;
+    display: block;
   }
 
   .service {
